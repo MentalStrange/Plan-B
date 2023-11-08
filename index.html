@@ -22,16 +22,20 @@
     <header>
       <nav class="container">
         <div class="nav-logo">
-          <img src="./img/logo.png" alt="Bankist logo" />
+          <a href="">
+            <img src="./img/logo.png" alt="Bankist logo" class="link-item" />
+          </a>
         </div>
         <div class="nav-links">
           <ul class="links">
-            <li><a href="#"> Feature </a></li>
-            <li><a href="#"> Operation </a></li>
-            <li><a href="#"> Testimonials </a></li>
+            <li><a href="#feature" class="link-item"> Feature </a></li>
+            <li><a href="#operation" class="link-item"> Operation </a></li>
+            <li>
+              <a href="#testimonials" class="link-item"> Testimonials </a>
+            </li>
             <li>
               <a href="#" class="openAccount">
-                <span> Open Account </span>
+                <span class="link-item"> Open Account </span>
               </a>
             </li>
           </ul>
@@ -71,7 +75,7 @@
     <!-- ------------------ -->
     <!-- start Feature Section -->
     <!-- ------------------ -->
-    <section class="feature">
+    <section class="feature" id="feature">
       <div class="container">
         <h1 class="feature-header header">Features</h1>
         <p>
@@ -134,7 +138,7 @@
     <!-- start operation Section -->
     <!-- ------------------ -->
     <hr />
-    <section class="operation">
+    <section class="operation" id="operation">
       <div class="container">
         <h1 class="operation-header header">Operations</h1>
         <p class="operation-p">
@@ -142,21 +146,53 @@
         </p>
         <div class="operation-option">
           <div class="option-btn">
-            <button class="scale-active">01 Instant Transfers</button>
-            <button>02 Instant Loans</button>
-            <button>03 Instant Close</button>
+            <button class="scale-active" data-tab="1">
+              01 Instant Transfers
+            </button>
+            <button data-tab="2">02 Instant Loans</button>
+            <button data-tab="3">03 Instant Close</button>
           </div>
-          <div class="option-content">
-            <div class="div-icon">
-              <i class="fas fa-upload icon"></i>
+          <div class="option-content-container">
+            <div class="option-content content-1">
+              <div class="div-icon">
+                <i class="fas fa-upload icon"></i>
+              </div>
+              <div class="text">
+                <h1>Transfer money to anyone in 1 sec</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  aliquam praesentium earum, illum pariatur dolor explicabo
+                  aspernatur nulla dolorum doloribus?
+                </p>
+              </div>
             </div>
-            <div class="text">
-              <h1>Transfer money to anyone in 1 sec</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                aliquam praesentium earum, illum pariatur dolor explicabo
-                aspernatur nulla dolorum doloribus?
-              </p>
+            <!-- content 2 -->
+            <div class="option-content content-2 hidden">
+              <div class="div-icon">
+                <i class="fas fa-upload icon"></i>
+              </div>
+              <div class="text">
+                <h1>Transfer money</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  aliquam praesentium earum, illum pariatur dolor explicabo
+                  aspernatur nulla dolorum doloribus?
+                </p>
+              </div>
+            </div>
+            <!-- content 3 -->
+            <div class="option-content content-3 hidden">
+              <div class="div-icon">
+                <i class="fas fa-upload icon"></i>
+              </div>
+              <div class="text">
+                <h1>Transfer</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  aliquam praesentium earum, illum pariatur dolor explicabo
+                  aspernatur nulla dolorum doloribus?
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -170,7 +206,7 @@
     <!-- ------------------ -->
     <!-- start testimonials section -->
     <!-- ------------------ -->
-    <section class="testimonials">
+    <section class="testimonials" id="">
       <div class="container-x">
         <h1 class="header">Not Sure Yet?</h1>
         <p class="testimonials-p">
